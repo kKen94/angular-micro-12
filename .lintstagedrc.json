@@ -1,0 +1,16 @@
+{
+  "packages/**/src/**/*.{ts,js,html}": [
+    "yarn run fix:eslint",
+    "yarn run lint:code",
+    "git add"
+  ],
+  "packages/libraries/projects/**/src/**/*.{ts,js,html}": [
+    "yarn run fix:eslint",
+    "yarn run lint:code",
+    "git add"
+  ],
+  "packages/**/src/**/*.scss": [
+    "yarn run fix:style",
+    "git add"
+  ]
+}
