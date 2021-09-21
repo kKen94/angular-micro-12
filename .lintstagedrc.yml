@@ -1,10 +1,7 @@
-linters:
-  src/**/\.{ts,js,html}:
-    - lerna run fix:eslint
-    - lerna run lint:code
-    - git add
+'src/**/\.{ts,js,html}':
+  - lerna run fix:eslint
+  - lerna run lint:code
 
-  src/**/\.scss:
-    - lerna run fix:style
-    - lerna run lint:style
-    - git add
+'src/**/\.scss':
+  - lerna run fix:style
+  - lerna run lint:style

@@ -9,8 +9,10 @@
     "build:dev": "lerna bootstrap && lerna run build:dev",
     "build:staging": "lerna bootstrap -- --production && lerna run build:staging",
     "build:prod": "lerna bootstrap -- --production && lerna run build:prod",
+    "fix": "lerna run fix",
     "lint": "lerna run lint",
-    "test": "lerna run test"
+    "test": "lerna run test",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@commitlint/cli": "^13.1.0",
@@ -18,7 +20,7 @@
     "@commitlint/prompt": "^13.1.0",
     "cross-env": "^7.0.3",
     "cz-conventional-changelog": "^3.3.0",
-    "husky": "^7.0.2",
+    "husky": "^7.0.0",
     "lerna": "^4.0.0",
     "lint-staged": "^11.1.2",
     "ng-packagr": "^12.2.1",
