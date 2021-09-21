@@ -9,6 +9,7 @@
     "@commitlint/config-conventional": "^13.1.0",
     "@commitlint/prompt": "^13.1.0",
     "cross-env": "^7.0.3",
+    "cz-conventional-changelog": "^3.3.0",
     "husky": "^7.0.2",
     "lerna": "^4.0.0",
     "lint-staged": "^11.1.2",
@@ -17,5 +18,10 @@
     "pretty-quick": "^3.1.1",
     "tsickle": "^0.43.0",
     "webpack-bundle-analyzer": "^4.4.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
