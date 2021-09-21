@@ -1,0 +1,21 @@
+{
+  "name": "angular-micro-12",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@commitlint/cli": "^13.1.0",
+    "@commitlint/config-conventional": "^13.1.0",
+    "@commitlint/prompt": "^13.1.0",
+    "cross-env": "^7.0.3",
+    "husky": "^7.0.2",
+    "lerna": "^4.0.0",
+    "lint-staged": "^11.1.2",
+    "ng-packagr": "^12.2.1",
+    "prettier": "^2.4.1",
+    "pretty-quick": "^3.1.1",
+    "tsickle": "^0.43.0",
+    "webpack-bundle-analyzer": "^4.4.2"
+  }
+}
