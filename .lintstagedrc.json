@@ -1,16 +1,17 @@
 {
   "packages/**/src/**/*.{ts,js,html}": [
-    "yarn run fix:eslint",
-    "yarn run lint:code",
+    "lerna run fix:eslint",
+    "lerna run lint:code",
     "git add"
   ],
   "packages/libraries/projects/**/src/**/*.{ts,js,html}": [
-    "yarn run fix:eslint",
-    "yarn run lint:code",
+    "lerna run fix:eslint",
+    "lerna run lint:code",
     "git add"
   ],
   "packages/**/src/**/*.scss": [
-    "yarn run fix:style",
+    "lerna run fix:style",
+    "lerna run lint:style",
     "git add"
   ]
 }

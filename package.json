@@ -6,7 +6,11 @@
   ],
   "scripts": {
     "start": "lerna run start --stream",
-    "build": "lerna bootstrap && lerna run build"
+    "build:dev": "lerna bootstrap && lerna run build:dev",
+    "build:staging": "lerna bootstrap -- --production && lerna run build:staging",
+    "build:prod": "lerna bootstrap -- --production && lerna run build:prod",
+    "lint": "lerna run lint",
+    "test": "lerna run test"
   },
   "devDependencies": {
     "@commitlint/cli": "^13.1.0",
@@ -20,6 +24,12 @@
     "ng-packagr": "^12.2.1",
     "prettier": "^2.4.1",
     "pretty-quick": "^3.1.1",
+    "stylelint": "^13.13.1",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-sass-guidelines": "^8.0.0",
+    "stylelint-config-standard": "^22.0.0",
+    "stylelint-order": "^4.1.0",
+    "stylelint-scss": "^3.21.0",
     "tsickle": "^0.43.0",
     "webpack-bundle-analyzer": "^4.4.2"
   },
