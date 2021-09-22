@@ -1,7 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "cli": {
-    "analytics": "853a75b3-eeff-47e7-8b48-bc474f3ce3e8"
+    "analytics": "853a75b3-eeff-47e7-8b48-bc474f3ce3e8",
+    "defaultCollection": "@angular-eslint/schematics"
   },
   "version": 1,
   "newProjectRoot": "projects",
@@ -10,7 +11,7 @@
       "projectType": "library",
       "root": "projects/models",
       "sourceRoot": "projects/models/src",
-      "prefix": "lib",
+      "prefix": "shared",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
@@ -33,6 +34,15 @@
             "main": "projects/models/src/test.ts",
             "tsConfig": "projects/models/tsconfig.spec.json",
             "karmaConfig": "projects/models/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/models/**/*.ts",
+              "projects/models/**/*.html"
+            ]
           }
         }
       }
