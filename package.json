@@ -7,10 +7,9 @@
   "scripts": {
     "start": "lerna run start --stream",
     "build:dev": "lerna bootstrap && lerna run build:dev",
-    "build:staging": "lerna bootstrap -- --production && lerna run build:staging",
     "build:prod": "lerna bootstrap -- --production && lerna run build:prod",
-    "fix": "lerna run fix",
-    "lint": "lerna run lint",
+    "fix": "lerna run fix --parallel",
+    "lint": "lerna run lint --parallel",
     "test": "lerna run test",
     "prepare": "husky install"
   },

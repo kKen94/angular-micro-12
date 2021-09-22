@@ -28,7 +28,7 @@
           "error",
           {
             "type": "attribute",
-            "prefix": "dashboard",
+            "prefix": "skeleton",
             "style": "camelCase"
           }
         ],
@@ -36,7 +36,7 @@
           "error",
           {
             "type": "element",
-            "prefix": "dashboard",
+            "prefix": "skeleton",
             "style": "kebab-case"
           }
         ],

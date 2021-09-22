@@ -1,20 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
-  selector: 'lib-models',
+  selector: 'models-lib',
   template: `
-    <p>
-      models works!
-    </p>
+    <p>models works!</p>
   `,
-  styles: [
-  ]
+  styles: [],
 })
-export class ModelsComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+export class ModelsComponent {
+  constructor() {}
 }
