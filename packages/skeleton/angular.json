@@ -2,7 +2,8 @@
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "cli": {
     "analytics": "3a442969-11a9-4f50-ae39-ec4928f91448",
-    "defaultCollection": "@angular-eslint/schematics"
+    "defaultCollection": "@angular-eslint/schematics",
+    "packageManager": "yarn"
   },
   "version": 1,
   "newProjectRoot": "projects",
