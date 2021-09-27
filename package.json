@@ -6,7 +6,7 @@
   ],
   "scripts": {
     "start": "yarn run kill-ports && lerna run serve:single-spa --stream",
-    "build:dev": "lerna bootstrap && lerna run build:dev",
+    "build:dev": "lerna bootstrap && lerna run build:dev --stream",
     "build:prod": "lerna bootstrap -- --production && lerna run build:prod",
     "fix": "lerna run fix --parallel",
     "lint": "lerna run lint --parallel",
