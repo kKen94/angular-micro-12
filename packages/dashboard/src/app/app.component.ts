@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Users } from '@models';
 
 @Component({
   selector: 'dashboard-root',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'dashboard';
+  user: Users;
+
+  constructor() {
+    this.user = { username: 'Franco' };
+  }
 }
