@@ -1,6 +1,6 @@
 {
   "name": "@microtest/skeleton",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "ng": "ng",
     "start": "cross-env NODE_ENV=dev ng serve --port=4200 --live-reload false --serve-path=/",

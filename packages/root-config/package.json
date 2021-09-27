@@ -1,14 +1,12 @@
 {
   "name": "@microtest/root-config",
   "main": "index.js",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "serve:single-spa": "serve src -s -l 4000"
   },
   "devDependencies": {
     "serve": "^12.0.1"
-  },
-  "dependencies": {
   },
   "private": true,
   "publishConfig": {

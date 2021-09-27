@@ -1,6 +1,6 @@
 {
   "name": "@microtest/shared",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "scripts": {
     "ng": "ng",
     "build:dev": "cross-env NODE_ENV=dev ng build",
